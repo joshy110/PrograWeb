@@ -1,0 +1,277 @@
+    /*Estos estilos son los que se utilizarán para realizar la página web*/
+    /*----------- ESTILOS QUE NO CAMBIAN EN NINGUNA DE LAS PÁGINAS USADAS -----------*/
+    
+    header {
+        background-color: #000203;
+        color: #fff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 50;
+        font-weight: bold;
+        text-align: center;
+        flex: center;
+        z-index: 100;
+    }
+    /*-------------------------Estilos de la barra de menus----------------------*/
+    
+    .navbarstyle {
+        background-color: #000203;
+        color: #fff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+        font-style: normal;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .activecolorBarraNav:hover {
+        background-color: #E5D808;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .activecolorBarraNavDM:hover .dropdown-menu {
+        background-color: #E5D808;
+        text-align: center;
+        display: inline-block;
+    }
+    /*-------------------------------------------------------------------------*/
+    
+    .TituloscolumnasPrincipal {
+        background-color: #E5D808;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: oblique;
+        font-size: 20px;
+        top: 375px;
+        text-align: justify;
+    }
+    /*-------------------Esto es la tabla de eventos que se esta manejando--------------------*/
+    
+    .fondoTituloEvento {
+        background-color: #E5D808;
+        color: black;
+    }
+    
+    .TablaEventos {
+        background-color: #000203;
+        color: #fff;
+        width: 250px;
+        height: 200px;
+        font-size: 11px;
+    }
+    .TablaMundial{
+        background-color: #000203;
+        color: #fff;
+        width: 100%;
+        height: 200px;
+        font-size: 11px;
+    }
+    /*------------------------------------------------*/
+    /*----------------- Esto es lo del logo principal*--------------*/
+    
+    .imagenP {
+        position: center;
+        left: 15px;
+        width: 750px;
+        height: 430px;
+    }
+    
+    .textoPImagenP {
+        position: absolute;
+        top: 340px;
+        left: 0;
+        width: 100%;
+    }
+    
+    .labelP {
+        background-color: #E5D808;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #fff;
+        font-style: oblique;
+        font-size: 30px;
+        border-bottom-left-radius: 2em;
+        border-top-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+        border-top-right-radius: 2em;
+        border: 1px solid #fff;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    
+    footer {
+        background: #E5D808;
+        color: #000203;
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+    /*---------------------------------------------------------------*/
+    
+    .LogoWeb {
+        padding: 20px;
+        margin: 20px;
+        border: 4px solid #fff;
+        float: left;
+        width: 100px;
+    }
+    
+    .Logoredes {
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid #fff;
+        float: left;
+        width: 50px;
+    }
+    /*----------------------------------------------------------------------------------------*/
+    /*---------------------------Estilos solo para el index-----------------------------*/
+    
+    .colorAside {
+        background-color: #000203;
+        color: #fff;
+        text-align: justify;
+        font-size: 6;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .colorHAside {
+        background-color: #E5D808;
+        color: #000203;
+        text-align: justify;
+        font-size: 25;
+    }
+    
+    .colorBotonNavBar {
+        background-color: #000203;
+        color: #fff;
+        text-align: justify;
+        font-size: 25;
+    }
+    /*----------------------------------------------------------------------------------------*/
+    /*---------------------------Estilos comunes-----------------------------*/
+    
+    .colorheader {
+        background-color: #E5D808;
+        color: #000203;
+        text-align: center;
+        width: 200px;
+    }
+    
+    .colorProyecto {
+        background-color: #E5D808;
+        color: #000203;
+        text-align: center;
+        width: 480px;
+    }
+    
+    .colorfrase {
+        padding-left: 20px;
+        background-color: #E5D808;
+        color: #000203;
+        text-align: justify;
+        font-size: 17px;
+        width: 750px;
+    }
+    
+    .panelcolor {
+        border: 2px solid #E5D808;
+    }
+    /*--------------------------------------------------------------------------------------*/
+    /*---------------------------Estilos usados en nosotros-----------------------------*/
+    
+    .colorTxt {
+        background-color: #fff;
+        color: #000203;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        font-weight: normal;
+        text-align: justify;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .estiloLista {
+        text-align: left;
+        background-color: #fff;
+        color: #000203;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 17px;
+        font-weight: normal;
+        text-align: justify;
+    }
+    /*---------------------------------------Imágenes y Vídeos-------------------------------*/
+    
+    .thumbnail {
+        position: static;
+        z-index: 0;
+    }
+    
+    .thumbnail:hover {
+        background-color: transparent;
+        z-index: 50;
+    }
+    
+    .thumbnail .span {
+        /* Estilos para la imagen agrandada */
+        position: absolute;
+        background-color: black;
+        padding: 2px;
+        left: -50px;
+        border: 5px double gray;
+        visibility: hidden;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .thumbnail .span .img {
+        border-width: 0;
+        padding: 2px;
+    }
+    
+    .thumbnail:hover .span {
+        visibility: visible;
+        top: 650px;
+        left: 500px;
+    }
+    
+    .grid {
+        padding: 60px;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    
+    .grid--item {
+        position: relative;
+        margin-top: -90px;
+        margin-right: 5px;
+        margin-left: 5px;
+        width: calc(33.33% - 10px);
+        float: left;
+        transition: all 0.5s;
+        overflow: hidden;
+        -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        -webkit-shape-outside: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    }
+    
+    .img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+        -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    }
+    /*------------------------------------------------------------------------------*/
+    /*---------------------------Estilos usados en el formulario Contacto-----------------------------*/
+    
+    .colorbtn {
+        background-color: #000203;
+        color: #fff;
+    }
+    /*--------------------------------------------------------------------------------------*/

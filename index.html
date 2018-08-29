@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html ng-app="PrograWebJoshy">
+
+<head>
+    <title>GKWeb</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!Se utiliza el bootstrap>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/estilos.css" rel="stylesheet" />
+    <!Se agrega el icono de la pestaña>
+    <link rel="shortcut icon" href="Imagenes/favicon.ico" />
+</head>
+
+<body oncontextmenu="return false">
+
+    <!Esto es el encabezado de la página web>
+    <img src="Imagenes/LogoWeb.jpg" class="LogoWeb img-circle">
+    <header>
+        <!Esto es un header centrado donde aparece el nombre de la página y la barra de menu>
+        <div class="container-fluid">
+
+            <h1> La web del arquero
+                <small>Todo acerca de porteros.</small>
+            </h1>
+            <br>
+            <!-- <div class="container-fluid">
+                <!Se agrega el menú de navegación>
+                <nav class="navbarstyle navbar navbar-default" role="navigation">
+                    <!Este es el diseño del navbar>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#MenuPMJDSTA">
+                                    <span class="sr-only">Menu</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                    </div>
+                    <!Ahora se van a agregar los Menus para movernos en las distintas páginas>
+                    <div class="collapse navbar-collapse" id="MenuPMJDSTA">
+                        <!Menu de todos ls items>
+                        <ul class="nav navbar-nav">
+                            <!Pagina de Inicio>
+                            <li class="activecolorBarraNav">
+                                <a href="index.html">Inicio</a><span><i ></i></span>
+                            </li>
+                            <!Página de Nosotros>
+                            <li class="activecolorBarraNav">
+                                <a href="Nosotros.html">Nosotros</a><span><i class="icon "></i></span>
+                            </li>
+                            <!Página de Misión>
+                            <li class="activecolorBarraNav">
+                                <a href="Proyectos.html">Proyecto</a><span><i class="icon "></i></span>
+                            </li>
+                            <!Página de Galerías>
+                            <li class="activecolorBarraNav activecolorBarraNavDM dropdown">
+                                <a class="activecolorBarraNav dropdown-toggle" data-toggle="dropdown collapsed" role="button">
+                                            Galerías <span class="caret"></span><i class="icon "></i>
+                                        </a>
+                                <!Sub-items del dropdown para Galerías>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="btnMenuMision">
+                                    <li role="presentation"><a role="item" href="CarreraOP.html">Carrera OP</a></li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="item" href="Convivencias.html">Convivencias</a></li>
+                                </ul>
+                            </li>
+                            <!Página de Video Blog>
+                            <li class="activecolorBarraNav">
+                                <a href="VBlog.html">Video-Blog</a><span><i class="icon "></i></span>
+                            </li>
+                            <!Página de Contacto>
+                            <li class="activecolorBarraNav">
+                                <a target="_blank" href="https://www.facebook.com/mjdtivoli/ ">Contacto</a><span><i class="icon "></i></span>
+                            </li>
+                          <!Quiniela>
+                            <li class="activecolorBarraNav">
+                                <a href="Proyectos.html">Proyecto</a><span><i class="icon "></i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div> -->
+        </div>
+    </header>
+    <br>
+    <br>
+
+    <!Se agrega el contenido del inicio a la página>
+    <div class="container-fluid">
+        <section class="main row">
+            <!El articulo principal donde irá la imágen>
+            <article class="col-xs-12 col-sm-12 col-md-8 col-lg-7 text-center">
+                <img src="Imagenes/LogoIndex.jpg" alt="LogoWeb-Ciudad-Foto" class="imagenP img-responsive">
+                <h2 class="textoPImagenP">
+                    <span class="labelP control-label">"Si no hubiera sido futbolista habría sido peor persona" - Gianguili Buffon</span>
+                </h2>
+            </article>
+
+            <!Esto es lo que va en el lado derecho- la barra aside>
+            <aside class="visible-lg visible-md visible-sm visible-xs col-xs-12 col-sm-6 col-md-6 col-lg-5 text-justify">
+                <header class="colorHAside">
+                    <h2>La web del arquero</h2>
+                </header>
+                <br>
+                <p class="colorAside text-info bg-success">
+                    Página Web dedicada a los amantes del fútbol, pero sobre todo a aquellos que juegan bajo los tres palos y saben lo importante de la labor de un portero.
+                </p>
+                <br>
+            </aside>
+        </section>
+    </div>
+
+    <br>
+    <br>
+
+    <!Aca inicia el menu de info pequeña que ira en columnas>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <br>
+                <h2 class="TituloscolumnasPrincipal label">Nuestra Misión</h2>
+                <br>
+                <br>
+                <p ng-controller="ControladorIndex">
+                    {{Mision}}
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <br>
+                <h2 class="TituloscolumnasPrincipal label">Vida Comunitaria</h2>
+                <br>
+                <br>
+                <p ng-controller="ControladorIndex">
+                    {{VidaComuni}}
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <br>
+                <h2 class="TituloscolumnasPrincipal label">Proyectos</h2>
+                <br>
+                <br>
+                <p ng-controller="ControladorIndex">
+                    {{Proyectos}}
+                </p>
+            </div>
+            <div class="container-fluid col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                <br>
+                <h2 class="TituloscolumnasPrincipal label">Eventos</h2>
+                <br>
+                <br>
+                <p>
+                    <b>
+                        PRÓXIMOS EVENTOS:
+                    </b>
+
+                    <table class="table-responsive TablaEventos table">
+                        <tr class="fondoTituloEvento">
+                            <th>Evento</th>
+                            <th>Lugar</th>
+                            <th>Fecha</th>
+                        </tr>
+                        <tr>
+                            <td>Incripciones Quiniela</td>
+                            <td>Parroquia Tivoli - Salon 4</td>
+                            <td>21-6-18 al 29-06-18</td>
+                        </tr>
+                        <tr>
+                            <td>Asamblea</td>
+                            <td>Parroquia Tivoli - Salon 3</td>
+                            <td>30-06-18</td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!Pie de pagina>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="ff col-xs-12 col-sm-6 col-md-3">
+                        <h4><b>Contactenos:</b></h4>
+                        <p>
+                            mjd.santotomasaquino@gmail.com
+                        </p>
+                    </div>
+                    <div class="ff col-xs-12 col-sm-6 col-md-3">
+                        <h4><b>Encuentranos:</b></h4>
+                        <p>
+                            1era avenida 9 - 14 zona 9, Ciudad de Guatemala
+                        </p>
+                    </div>
+                    <div class="ff col-xs-12 col-sm-6 col-md-3">
+                        <h4><b>Creado por:</b></h4>
+                        <p>
+                            2016 by MJD Santo Tomas de Aquino-Tivoli
+                        </p>
+                    </div>
+                    <div class="ff col-xs-12 col-sm-6 col-md-3">
+                        <h4><b>Siguienos:</b></h4>
+                        <div class="row ">
+                            <div class="ff col-xs-12 col-sm-6 col-md-6 ">
+                                <!Se hace referencia a la página de fb>
+                                <a target="_blank" href="https://www.facebook.com/mjdtivoli/ ">
+                                    <img src="Imagenes/glyphicons-social-31-facebook.png " class="Logoredes img-circle ">
+                                </a>
+                            </div>
+                            <div class="ff col-xs-12 col-sm-6 col-md-6 ">
+                                <a target="_blank" href="https://www.instagram.com/?hl=en ">
+                                    <img src="Imagenes/glyphicons-social-33-instagram.png " class="Logoredes img-circle ">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!Recursos a utilizar>
+        <script src="js/jquery-3.1.1.js " type="text/javascript "></script>
+        <script src="js/bootstrap.min.js " type="text/javascript"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/controladorWeb.js"></script>
+        <script src="js/angular-route.min.js"></script>
+        <!script src="js/custom.js " type="text/javascript ">
+        <!/script>
+</body>
+
+</html>
