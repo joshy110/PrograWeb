@@ -73,7 +73,7 @@
     .imagenP {
         position: center;
         left: 15px;
-        width: 750px;
+        width: 7501px;
         height: 430px;
     }
     
@@ -128,6 +128,7 @@
     
     .colorAside {
         background-color: #000203;
+        font-family: Georgia, 'Times New Roman', Times, serif;
         color: #fff;
         text-align: justify;
         font-size: 6;
