@@ -63,7 +63,7 @@
     .TablaMundial{
         background-color: #000203;
         color: #0974DB;
-        width: 100%;
+        width: 1220px;
         height: 200px;
         font-size: 11px;
     }
@@ -183,7 +183,7 @@
         margin: 10px;
         border: 4px solid #000203;
         float: left;
-        width: 150px;
+        width: 100px;
     }
     /*--------------------------------------------------------------------------------------*/
     /*---------------------------Estilos usados en nosotros-----------------------------*/
