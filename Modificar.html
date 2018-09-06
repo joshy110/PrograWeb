@@ -65,11 +65,19 @@
                                 </a>
                                 <!Sub-items del dropdown para Galerías>
                                 <ul class="dropdown-menu" role="menu" aria-labelledby="btnMenuMision">
-                                    <li role="presentation"><a role="item" href="Camisolas-Pants.html">Camisolas-Pants</a></li>
+                                    <li role="presentation"><a role="item" href="Camisolas.html">Camisolas</a></li>
                                     <li class="divider"></li>
                                     <li role="presentation"><a role="item" href="Guantes.html">Guantes</a></li>
                                     <li class="divider"></li>
-                                    <li role="presentation"><a role="item" href="Insumos.html">Insumos</a></li>
+                                    <li role="presentation"><a role="item" href="Pants.html">Pants</a></li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="item" href="Protectores.html">Protectores</a></li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="item" href="Shorts.html">Shorts</a></li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="item" href="Tenis.html">Tenis</a></li>
+                                    <li class="divider"></li>
+                                    <li role="presentation"><a role="item" href="Vendas.html">Vendas</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -78,67 +86,44 @@
             </div>
         </div>
     </header>
-    <br>
-    <br>
 
-    <!Se agrega el contenido del inicio a la página>
-    <div class="container-fluid">
-        <section class="main row">
-            <!El articulo principal donde irá la imágen>
-            <article class="col-xs-12 col-sm-12 col-md-8 col-lg-7 text-center">
-                <img src="Imagenes/LogoIndex.jpg" alt="LogoWeb-Ciudad-Foto" class="imagenP img-responsive">
-                <h2 class="textoPImagenP">
-                    <span class="labelP control-label" id="Frasemoti">"Si no hubiera sido futbolista habría sido peor persona" - Gianguili Buffon</span>
-                </h2>
-            </article>
-
-            <!Esto es lo que va en el lado derecho- la barra aside>
-            <aside class="visible-lg visible-md visible-sm visible-xs col-xs-12 col-sm-6 col-md-6 col-lg-5 text-justify">
-                <header class="colorHAside">
-                    <h2>La web del arquero</h2>
-                </header>
-                <br>
-                <p class="colorAside text-info bg-success" id="infoIndex">
-                    Nosotros somos una organización que surge en el año 2018 con el objetivo de informar a todas aquellas personas que tienen poco conocimiento lo que conlleva ser portero, los sacrificios que se hacen y los arduos entrenamientos que se llevan a cabo pero sobre todo lo bien que se la pasa siendo portero.
-                    <br>
-                    A su vez va dedicada a aquellos arqueros experimentados que quieren mejorar su técnica de portero.
-                    <br>
-                    <br>
-                    Por ello somos la web dedicada a los amantes del fútbol en especial a aquellos amantes de quitar goles y ser las estrellas del equipo.
-                </p>
-                <br>
-            </aside>
-        </section>
+    <!Modificacion>
+    <br>
+    <header class="colorheader">
+        <h1>Modificacion de Productos</h1>
+    </header>
+    <br>
+    <!Se pide Id Producto>
+    <div class="container-fluid text-center">
+            <label>
+              IdProducto:
+              <input type="text" name="Identificador" />
+            </label>
+            <input type="submit" value="Buscar" />
     </div>
 
-    <br>
-    <br>
-
-    <!Aca inicia el menu de info pequeña que ira en columnas>
-    <div class="container-fluid">
+    <!Datos del producto>
+    <header class="colorheader">
+        <h2>Datos del productos</h2>
+    </header>
+    <div class="container-fluid text-center">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <br>
-                <h2 class="TituloscolumnasPrincipal label" id="TituloMiison">Nuestra Misión</h2>
-                <br>
-                <br>
-                <p class="colorAside" id="Mision">
-                    Es llevarle a usted los conocimientos básicos e información relevante del mundo de los arqueros
-                </p>
+            <div class="ff col-xs-12 col-sm-6 col-md-3">
+                <h4><b>Contactenos:</b></h4>
+                <label>
+                    Imagen Producto:
+                    <input type="image" name="ImgProd" readonly/>
+                </label>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <br>
-                <h2 class="TituloscolumnasPrincipal label" id="TituloVision">Visión</h2>
-                <br>
-                <br>
-                <p class="colorAside" id="Vision">
-                    Queremos que todos los visitantes de la web salgan de ella con queriendo ser arqueros.
-                </p>
-            </div>
+            <label>
+                Nombre Producto:
+                <input type="text" name="NameProd" readonly/>
+            </label>
+            <label>
+                Costo:
+                <input type="text" name="CostoProd" readonly/>
+            </label>
         </div>
-        <br>
-        <br>
-        <br>
     </div>
    
     <!Pie de pagina>
