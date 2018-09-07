@@ -70,26 +70,11 @@
                                 </span>
                             </li>
                             <!Catalogo de Productos>
-                            <li class="activecolorBarraNav activecolorBarraNavDM dropdown">
-                                <a class="activecolorBarraNav dropdown-toggle" data-toggle="dropdown collapsed" role="button">
-                                    Ver Productos
-                                    <span class="caret"></span>
-                                    <i class="icon "></i>
-                                </a>
-                                <!Sub-items del dropdown para Galerías>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="btnMenuMision">
-                                    <li role="presentation">
-                                        <a role="item" href="Camisolas-Pants.html">Camisolas-Pants</a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li role="presentation">
-                                        <a role="item" href="Guantes.html">Guantes</a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li role="presentation">
-                                        <a role="item" href="Insumos.html">Insumos</a>
-                                    </li>
-                                </ul>
+                            <li class="activecolorBarraNav">
+                                    <a href="VerProdu.html">Ver Productos</a>
+                                    <span>
+                                        <i class="icon "></i>
+                                    </span>
                             </li>
                         </ul>
                     </div>
@@ -103,21 +88,22 @@
     <header class="colorHAside">
         <h1>Modificacion de Productos</h1>
     </header>
-
-    <!Se pide Id Producto>
     <div class="container-fluid text-center">
-        <label>
-            IdProducto:
-            <input type="text" name="Identificador" />
-        </label>
-        <input type="submit" value="Buscar" />
-
+            <label>
+                IdProducto:
+                <input type="text-center" name="Identificador" value="12345" readonly/>
+            </label>
+            <input type="submit" value="Buscar" />
+        </div>
+    <!Se pide Id Producto>
+    <div class="container-fluid">
         <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <table class="table-responsive TablaMundial">
                 <tr class="fondoTituloEvento">
                     <th>Imagen Producto</th>
                     <th>Nombre</th>
                     <th>Costo (Q)</th>
+                    <th>Cantidad</th>
                 </tr>
                 <tr>
                     <td>
@@ -129,22 +115,29 @@
                     <td>
                         <input type="text" name="Costo"  value="400" /> 
                     </td>
+                    <td>
+                        <input type="text" name="Cantidad"  value="0    " /> 
+                    </td>
                 </tr>
             </table>
         </div>
     </div>
-
     <div class="container-fluid text-center">
-        <!Datos del producto>
-        <header class="colorHAside">
-            <h2>Mostrar Modificacion del productos</h2>
-        </header>
+        <input type="submit" class="colorbtn" value="Modificar" />
+    </div>
+
+    <!Datos del producto>
+    <header class="colorHAside">
+        <h2>Mostrar Modificacion del productos</h2>
+    </header>
+    <div class="container-fluid">
         <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <table class="table-responsive TablaMundial">
                 <tr class="fondoTituloEvento">
                     <th>Imagen Producto</th>
                     <th>Nombre</th>
                     <th>Costo (Q)</th>
+                    <th>Cantidad</th>
                 </tr>
                 <tr>
                     <td>
@@ -152,6 +145,7 @@
                     </td>
                     <td>RinatF250</td>
                     <td>375</td>
+                    <td>30</td>
                 </tr>
             </table>
         </div>
